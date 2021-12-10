@@ -1,0 +1,38 @@
+.btn-facebook {
+    background-color: #4267B2;
+}
+
+.btn-facebook:hover {
+    background-color: #2F4A80;
+}
+
+.btn-facebook:focus {
+    border-color: #4267B2;
+    box-shadow: 0 0 0 0.25rem rgba(66, 103, 178, 0.25);
+}
+
+.btn-twitter {
+    background-color: #1DA1F2;
+}
+
+.btn-twitter:hover {
+    background-color: #0B75B6;
+}
+
+.btn-twitter:focus {
+    border-color: #1DA1F2;
+    box-shadow: 0 0 0 0.25rem rgba(29, 161, 242, 0.25);
+}
+
+.btn-instagram {
+    background-color: #C13584;
+}
+
+.btn-instagram:hover {
+    background-color: #89265E;
+}
+
+.btn-instagram:focus {
+    border-color: #C13584;
+    box-shadow: 0 0 0 0.25rem rgba(193, 53, 132, 0.25);
+}

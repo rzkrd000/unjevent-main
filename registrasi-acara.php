@@ -8,52 +8,102 @@
 
     <!-- Bootstrap CSS -->
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="sweetalert2.min.css">
 
     <title>Daftarkan Kegiatan</title>
 </head>
 
 <body class="d-flex flex-column h-100">
 
-    <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3" aria-label="header">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo/Logo UNJ Event.png" width="190" class="d-inline-block"
-                        alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link px-3 mx-2" href="index.html">Beranda</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle px-3 mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kegiatan</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="kategori\lomba\lomba.html">Lomba</a></li>
-                                <li><a class="dropdown-item" href="kategori\webinar\webinar.html">Webinar</a></li>
-                                <li><a class="dropdown-item" href="kategori\workshop\workshop.html">Workshop</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3 mx-2" href="registrasi-acara.html">Daftarkan Kegiatan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3 mx-2" href="about-us.html">Tentang Kami</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3 mx-2" href="admin/logout.php">Log Out</a>
-                        </li>
-                    </ul>
+<!-- Header -->
+<?php
+        session_start();
+    ?>
+
+    <?php 
+
+    if (isset($_SESSION['username'])){ ?>
+        <header>
+            <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3" aria-label="header">
+                <div class="container">
+                    <a class="navbar-brand" href="index.php">
+                        <img src="assets/images/logo/Logo UNJ Event.png" width="190" class="d-inline-block"
+                            alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="index.php">Beranda</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle px-3 mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kegiatan</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="kategori\lomba\lomba.php">Lomba</a></li>
+                                    <li><a class="dropdown-item" href="kategori\webinar\webinar.php">Webinar</a></li>
+                                    <li><a class="dropdown-item" href="kategori\workshop\workshop.php">Workshop</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="registrasi-acara.php">Daftarkan Kegiatan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="about-us.php">Tentang Kami</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="admin/logout.php">Log out</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+
+    <?php } else { ?>
+        <header>
+            <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3" aria-label="header">
+                <div class="container">
+                    <a class="navbar-brand" href="index.php">
+                        <img src="assets\images\logo\Logo UNJ Event.png" width="190" class="d-inline-block"
+                            alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="index.php">Beranda</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle px-3 mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acara</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="kategori/lomba/lomba.php">Lomba</a></li>
+                                    <li><a class="dropdown-item" href="kategori/webinar/webinar.php">Webinar</a></li>
+                                    <li><a class="dropdown-item" href="kategori/workshop/workshop.php">Workshop</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="registrasi-acara.php">Daftarkan Acara</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="about-us.php">Tentang Kami</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-sm btn-outline-primary px-3 py-2" href="login.php" role="button">
+                            Masuk
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <?php } ?>
 
     <section class="pt-md-11 px-md-5 mt-md-2 mx-4 mx-md-5">
         <div class="container">
@@ -111,7 +161,7 @@
                                     id="exampleInputYourmessage">
                             </div>
                             <div class="text-center text-md-start mt-4 mb-3">
-                                <button type="submit" class="btn btn-primary shadow px-3 py-2">
+                                <button onclick="sweetalertclick()" type="button" class="btn btn-primary shadow px-3 py-2">
                                     Send <em class="fas fa-paper-plane ms-2"></em>
                                 </button>
                             </div>
@@ -123,13 +173,23 @@
         </div> <!-- / .container -->
     </section>
 
+    <script>
+        function sweetalertclick(){
+            Swal.fire({
+                icon: 'success',
+                title: 'Data Berhasil diinput',
+                text: 'Kami akan segera memproses acara anda',
+            })
+        }
+    </script>
+
     <!-- Footer -->
     <footer class="footer mt-auto pt-4 pb-2 text-center text-white">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-5 px-3">
                 <div class="col">
                     <h5>
-                        <a href="about-us.html" class="text-white text-decoration-none">
+                        <a href="about-us.php" class="text-white text-decoration-none">
                             <i class="fas fa-users me-2 me-md-1"></i>
                             About Us
                         </a>
@@ -138,7 +198,7 @@
 
                 <div class="col">
                     <h5>
-                        <a href="contact-us.html" class="text-white text-decoration-none">
+                        <a href="contact-us.php" class="text-white text-decoration-none">
                             <i class="fas fa-headset me-2 me-md-1"></i>
                             Contact Us
                         </a>
@@ -188,6 +248,10 @@
     <!-- slick slider JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     
+    <!-- sweet alert js -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+
     <script src="js/app.js"></script>
 
 </body>

@@ -23,7 +23,7 @@
         <header>
             <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3" aria-label="header">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <img src="assets/images/logo/Logo UNJ Event.png" width="190" class="d-inline-block"
                             alt="logo">
                     </a>
@@ -40,16 +40,16 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle px-3 mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kegiatan</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="kategori\lomba\lomba.html">Lomba</a></li>
-                                    <li><a class="dropdown-item" href="kategori\webinar\webinar.html">Webinar</a></li>
-                                    <li><a class="dropdown-item" href="kategori\workshop\workshop.html">Workshop</a></li>
+                                    <li><a class="dropdown-item" href="kategori\lomba\lomba.php">Lomba</a></li>
+                                    <li><a class="dropdown-item" href="kategori\webinar\webinar.php">Webinar</a></li>
+                                    <li><a class="dropdown-item" href="kategori\workshop\workshop.php">Workshop</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-3 mx-2" href="registrasi-acara.html">Daftarkan Kegiatan</a>
+                                <a class="nav-link px-3 mx-2" href="registrasi-acara.php">Daftarkan Kegiatan</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-3 mx-2" href="about-us.html">Tentang Kami</a>
+                                <a class="nav-link px-3 mx-2" href="about-us.php">Tentang Kami</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link px-3 mx-2" href="admin/logout.php">Log out</a>
@@ -81,16 +81,16 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle px-3 mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acara</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="kategori/lomba/lomba.html">Lomba</a></li>
-                                    <li><a class="dropdown-item" href="kategori/webinar/webinar.html">Webinar</a></li>
-                                    <li><a class="dropdown-item" href="kategori/workshop/workshop.html">Workshop</a></li>
+                                    <li><a class="dropdown-item" href="kategori/lomba/lomba.php">Lomba</a></li>
+                                    <li><a class="dropdown-item" href="kategori/webinar/webinar.php">Webinar</a></li>
+                                    <li><a class="dropdown-item" href="kategori/workshop/workshop.php">Workshop</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-3 mx-2" href="registrasi-acara.html">Daftarkan Acara</a>
+                                <a class="nav-link px-3 mx-2" href="registrasi-acara.php">Daftarkan Acara</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-3 mx-2" href="about-us.html">Tentang Kami</a>
+                                <a class="nav-link px-3 mx-2" href="about-us.php">Tentang Kami</a>
                             </li>
                         </ul>
                         <a class="btn btn-sm btn-outline-primary px-3 py-2" href="login.php" role="button">
@@ -161,7 +161,7 @@
                 <h2 class="fw-bolder text-dark text-center col-md-12 mb-3">Lomba Terbaru</h2>
                 <div class="col my-2">
                     <div class="card">
-                        <a href="kategori/lomba/Konten/lomba-1.html">
+                        <a href="kategori/lomba/Konten/lomba-1.php">
                             <img src="assets/images/event/lomba/Essay Competition.jpeg"
                                 class="card-img-top" alt="thumbnail">
                         </a>
@@ -177,7 +177,7 @@
                 </div>
                 <div class="col my-2">
                     <div class="card">
-                        <a href="kategori/lomba/Konten/lomba-2.html">
+                        <a href="kategori/lomba/Konten/lomba-2.php">
                             <img src="assets/images/event/lomba/G-Sastrasia.jpeg"
                                 class="card-img-top" alt="thumbnail"> 
                         </a>
@@ -194,7 +194,7 @@
                 </div>
                 <div class="col my-2">
                     <div class="card">
-                        <a href="kategori/lomba/Konten/lomba-3.html">
+                        <a href="kategori/lomba/Konten/lomba-3.php">
                             <img src="assets/images/event/lomba/Mechanical Engineering Expo.jpeg"
                             class="card-img-top" alt="thumbnail">
                         </a>
@@ -216,7 +216,7 @@
                 <h2 class="fw-bolder text-dark text-center col-md-12 mb-3">Webinar Terbaru</h2>
                 <div class="col my-2">
                     <div class="card">
-                        <a href="kategori/webinar/Konten/webinar-8.html">
+                        <a href="kategori/webinar/Konten/webinar-8.php">
                             <img src="assets/images/event/webinar/Webinar.jpeg"
                             class="card-img-top" alt="thumbnail">
                         </a>
@@ -234,7 +234,7 @@
                 </div>
                 <div class="col my-2">
                     <div class="card">
-                        <a href="kategori/webinar/Konten/webinar-1.html">
+                        <a href="kategori/webinar/Konten/webinar-1.php">
                             <img src="assets/images/event/webinar/Kalimah Akbar.jpeg"
                             class="card-img-top" alt="thumbnail">
                         </a>
@@ -253,7 +253,7 @@
                 </div>
                 <div class="col my-2">
                     <div class="card">
-                        <a href="kategori/webinar/Konten/webinar-2.html">
+                        <a href="kategori/webinar/Konten/webinar-2.php">
                             <img src="assets/images/event/webinar/Seminar K-Talks.jpeg"
                             class="card-img-top" alt="thumbnail">
                         </a>
@@ -274,7 +274,7 @@
                 <h2 class="fw-bolder text-dark text-center col-md-12 mb-3">Workshop Terbaru</h2>
                 <div class="col my-2">
                     <div class="card">
-                        <a href="kategori/workshop/Konten/workshop-1.html">
+                        <a href="kategori/workshop/Konten/workshop-1.php">
                             <img src="assets/images/event/workshop/Workshop.jpeg"
                             class="card-img-top" alt="thumbnail">
                         </a>
@@ -319,7 +319,7 @@
             <div class="row row-cols-1 row-cols-md-5 px-3">
                 <div class="col">
                     <h5>
-                        <a href="about-us.html" class="text-white text-decoration-none">
+                        <a href="about-us.php" class="text-white text-decoration-none">
                             <i class="fas fa-users me-2 me-md-1"></i>
                             About Us
                         </a>
@@ -328,7 +328,7 @@
 
                 <div class="col">
                     <h5>
-                        <a href="contact-us.html" class="text-white text-decoration-none">
+                        <a href="contact-us.php" class="text-white text-decoration-none">
                             <i class="fas fa-headset me-2 me-md-1"></i>
                             Contact Us
                         </a>

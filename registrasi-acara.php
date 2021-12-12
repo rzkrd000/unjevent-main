@@ -179,7 +179,9 @@
                 icon: 'success',
                 title: 'Data Berhasil diinput',
                 text: 'Kami akan segera memproses acara anda',
-            })
+            }). then (function(){
+            window.location = "registrasi-acara.php";
+            });
         }
     </script>
 

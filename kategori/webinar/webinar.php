@@ -12,43 +12,95 @@
 
 <body class="d-flex flex-column h-100">
 
-    <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3" aria-label="header">
-            <div class="container">
-                <a class="navbar-brand" href="../../index.html">
-                    <img src="../../assets/images/logo/Logo UNJ Event.png" width="190" class="d-inline-block"
-                        alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link px-3 mx-2" href="../../index.html">Beranda</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle px-3 mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acara</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="../lomba/lomba.html">Lomba</a></li>
-                                <li><a class="dropdown-item" href="../webinar/webinar.html">Webinar</a></li>
-                                <li><a class="dropdown-item" href="../workshop/workshop.html">Workshop</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3 mx-2" href="../../registrasi-acara.html">Daftarkan Acara</a>
-                        </li>
-                    </ul>
-                    <a class="btn btn-sm btn-outline-primary px-3 py-2" href="../../login.html" role="button">
-                        Masuk
+<!-- Header -->
+<?php
+        session_start();
+    ?>
+
+    <?php 
+
+    if (isset($_SESSION['username'])){ ?>
+        <header>
+            <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3" aria-label="header">
+                <div class="container">
+                    <a class="navbar-brand" href="../../index.php">
+                        <img src="..\..\assetsimages\logo\Logo UNJ Event.png" width="190" class="d-inline-block"
+                            alt="logo">
                     </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="../../index.php">Beranda</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle px-3 mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kegiatan</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="..\lomba\lomba.php">Lomba</a></li>
+                                    <li><a class="dropdown-item" href="webinar.php">Webinar</a></li>
+                                    <li><a class="dropdown-item" href="..\workshop\workshop.php">Workshop</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="../../registrasi-acara.php">Daftarkan Kegiatan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="../../about-us.php">Tentang Kami</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="../../admin/logout.php">Log out</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+
+    <?php } else { ?>
+        <header>
+            <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3" aria-label="header">
+                <div class="container">
+                    <a class="navbar-brand" href="../../index.php">
+                        <img src="../../assets\images\logo\Logo UNJ Event.png" width="190" class="d-inline-block"
+                            alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="../../index.php">Beranda</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle px-3 mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acara</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="../lomba/lomba.php">Lomba</a></li>
+                                    <li><a class="dropdown-item" href="webinar.php">Webinar</a></li>
+                                    <li><a class="dropdown-item" href="../workshop/workshop.php">Workshop</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="../../registrasi-acara.php">Daftarkan Acara</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="../../about-us.php">Tentang Kami</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-sm btn-outline-primary px-3 py-2" href="../../login.php" role="button">
+                            Masuk
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <?php } ?>
 
      <!-- Buttons -->
      <!-- <div class="text-center text-md-start"> -->
@@ -66,7 +118,7 @@
                 <h2 class="fw-bolder text-dark text-center col-md-12 mb-3">Webinar</h2>
                 <div class="col my-2">
                     <div class="card">
-                        <a href="Konten/webinar-1.html">
+                        <a href="Konten/webinar-1.php">
                             <img src="../../assets/images/event/webinar/Kalimah Akbar.jpeg"
                                 class="card-img-top" alt="thumbnail">
                         </a>
@@ -85,7 +137,7 @@
                 </div>
                 <div class="col my-2">
                     <div class="card">
-                        <a href="Konten/webinar-2.html">
+                        <a href="Konten/webinar-2.php">
                             <img src="../../assets/images/event/webinar/Seminar K-Talks.jpeg"
                                 class="card-img-top" alt="thumbnail"> 
                         </a>
@@ -106,7 +158,7 @@
                 </div>
                 <div class="col my-2">
                     <div class="card">
-                        <a href="Konten/webinar-3.html">
+                        <a href="Konten/webinar-3.php">
                             <img src="../../assets/images/event/webinar/Seminar Nasional.jpeg"
                             class="card-img-top" alt="thumbnail">
                         </a>
@@ -133,7 +185,7 @@
             <div class="row row-cols-1 row-cols-md-3 mt-3 pt-3">
                 <div class="col my-2">
                     <div class="card">
-                        <a href="Konten/webinar-4.html">
+                        <a href="Konten/webinar-4.php">
                             <img src="../../assets/images/event/webinar/Seminar PKM.jpeg"
                                 class="card-img-top" alt="thumbnail">
                         </a>
@@ -153,7 +205,7 @@
                 </div>
                 <div class="col my-2">
                     <div class="card">
-                        <a href="Konten/webinar-5.html">
+                        <a href="Konten/webinar-5.php">
                             <img src="../../assets/images/event/webinar/Seminar2.jpeg"
                                 class="card-img-top" alt="thumbnail"> 
                         </a>
@@ -169,7 +221,7 @@
                 </div>
                 <div class="col my-2">
                     <div class="card">
-                        <a href="Konten/webinar-6.html">
+                        <a href="Konten/webinar-6.php">
                             <img src="../../assets/images/event/webinar/Webinar Nasional.jpeg"
                             class="card-img-top" alt="thumbnail">
                         </a>
@@ -190,7 +242,7 @@
             <div class="row row-cols-1 row-cols-md-3 mt-3 pt-3">
                 <div class="col my-2">
                     <div class="card">
-                        <a href="Konten/webinar-7.html">
+                        <a href="Konten/webinar-7.php">
                             <img src="../../assets/images/event/webinar/webinar pkm.jpeg"
                                 class="card-img-top" alt="thumbnail">
                         </a>
@@ -206,7 +258,7 @@
                 </div>
                 <div class="col my-2">
                     <div class="card">
-                        <a href="Konten/webinar-8.html">
+                        <a href="Konten/webinar-8.php">
                             <img src="../../assets/images/event/webinar/Webinar.jpeg"
                                 class="card-img-top" alt="thumbnail"> 
                         </a>
@@ -236,7 +288,7 @@
             <div class="row row-cols-1 row-cols-md-5 px-3">
                 <div class="col">
                     <h5>
-                        <a href="../../about-us.html" class="text-white text-decoration-none">
+                        <a href="../../about-us.php" class="text-white text-decoration-none">
                             <i class="fas fa-users me-2 me-md-1"></i>
                             About Us
                         </a>
@@ -245,7 +297,7 @@
 
                 <div class="col">
                     <h5>
-                        <a href="../../contact-us.html" class="text-white text-decoration-none">
+                        <a href="../../contact-us.php" class="text-white text-decoration-none">
                             <i class="fas fa-headset me-2 me-md-1"></i>
                             Contact Us
                         </a>

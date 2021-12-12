@@ -12,46 +12,95 @@
 
 <body class="d-flex flex-column h-100">
 
-    <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3" aria-label="header">
-            <div class="container">
-                <a class="navbar-brand" href="../../../index.html">
-                    <img src="../../../assets/images/logo/Logo UNJ Event.png" width="190" class="d-inline-block"
-                        alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link px-3 mx-2" href="index.html">Beranda</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle px-3 mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kegiatan</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="kategori\lomba\lomba.html">Lomba</a></li>
-                                <li><a class="dropdown-item" href="kategori\webinar\webinar.html">Webinar</a></li>
-                                <li><a class="dropdown-item" href="kategori\workshop\workshop.html">Workshop</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3 mx-2" href="registrasi-acara.html">Daftarkan Kegiatan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3 mx-2" href="about-us.html">Tentang Kami</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3 mx-2" href="admin/logout.php">Log Out</a>
-                        </li>
-                    </ul>
+<!-- Header -->
+    <?php
+        session_start();
+    ?>
+
+    <?php 
+
+    if (isset($_SESSION['username'])){ ?>
+        <header>
+            <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3" aria-label="header">
+                <div class="container">
+                    <a class="navbar-brand" href="../../../index.php">
+                        <img src="..\..\..\assetsimages\logo\Logo UNJ Event.png" width="190" class="d-inline-block"
+                            alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="../../../index.php">Beranda</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle px-3 mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kegiatan</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="..\..\lomba\lomba.php">Lomba</a></li>
+                                    <li><a class="dropdown-item" href="..\..\webinar\webinar.php">Webinar</a></li>
+                                    <li><a class="dropdown-item" href="..\..\workshop\workshop.php">Workshop</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="../../../registrasi-acara.php">Daftarkan Kegiatan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="../../../about-us.php">Tentang Kami</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="../../../admin/logout.php">Log out</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+
+    <?php } else { ?>
+        <header>
+            <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3" aria-label="header">
+                <div class="container">
+                    <a class="navbar-brand" href="../../../index.php">
+                        <img src="../../../assets\images\logo\Logo UNJ Event.png" width="190" class="d-inline-block"
+                            alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="../../../index.php">Beranda</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle px-3 mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acara</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="../../lomba/lomba.php">Lomba</a></li>
+                                    <li><a class="dropdown-item" href="../../webinar/webinar.php">Webinar</a></li>
+                                    <li><a class="dropdown-item" href="../../workshop/workshop.php">Workshop</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="../../../registrasi-acara.php">Daftarkan Acara</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="../../../about-us.php">Tentang Kami</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-sm btn-outline-primary px-3 py-2" href="../../../login.php" role="button">
+                            Masuk
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <?php } ?>
     
     <main class="container">
         <div class="row my-5">
@@ -119,7 +168,7 @@
             <div class="row row-cols-1 row-cols-md-5 px-3">
                 <div class="col">
                     <h5>
-                        <a href="../../../about-us.html" class="text-white text-decoration-none">
+                        <a href="../../../about-us.php" class="text-white text-decoration-none">
                             <i class="fas fa-users me-2 me-md-1"></i>
                             About Us
                         </a>
@@ -128,7 +177,7 @@
 
                 <div class="col">
                     <h5>
-                        <a href="../../../contact-us.html" class="text-white text-decoration-none">
+                        <a href="../../../contact-us.php" class="text-white text-decoration-none">
                             <i class="fas fa-headset me-2 me-md-1"></i>
                             Contact Us
                         </a>

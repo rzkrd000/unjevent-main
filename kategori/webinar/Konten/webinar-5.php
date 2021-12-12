@@ -24,7 +24,7 @@
             <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3" aria-label="header">
                 <div class="container">
                     <a class="navbar-brand" href="../../../index.php">
-                        <img src="..\..\..\assetsimages\logo\Logo UNJ Event.png" width="190" class="d-inline-block"
+                        <img src="..\..\..\assets\images\logo\Logo UNJ Event.png" width="190" class="d-inline-block"
                             alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"

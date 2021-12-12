@@ -24,7 +24,7 @@
             <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3" aria-label="header">
                 <div class="container">
                     <a class="navbar-brand" href="../../index.php">
-                        <img src="..\..\assetsimages\logo\Logo UNJ Event.png" width="190" class="d-inline-block"
+                        <img src="..\..\assets\images\logo\Logo UNJ Event.png" width="190" class="d-inline-block"
                             alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -40,7 +40,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle px-3 mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kegiatan</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="lomba.php">Lomba</a></li>
+                                    <li><a class="dropdown-item" href="..\lomba\lomba.php">Lomba</a></li>
                                     <li><a class="dropdown-item" href="..\webinar\webinar.php">Webinar</a></li>
                                     <li><a class="dropdown-item" href="..\workshop\workshop.php">Workshop</a></li>
                                 </ul>
@@ -65,7 +65,7 @@
             <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3" aria-label="header">
                 <div class="container">
                     <a class="navbar-brand" href="../../index.php">
-                        <img src="../../assets\images\logo\Logo UNJ Event.png" width="190" class="d-inline-block"
+                        <img src="../../assets/images/logo/Logo UNJ Event.png" width="190" class="d-inline-block"
                             alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -83,7 +83,7 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                     <li><a class="dropdown-item" href="../lomba/lomba.php">Lomba</a></li>
                                     <li><a class="dropdown-item" href="../webinar/webinar.php">Webinar</a></li>
-                                    <li><a class="dropdown-item" href="workshop.php">Workshop</a></li>
+                                    <li><a class="dropdown-item" href="../workshop/workshop.php">Workshop</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">

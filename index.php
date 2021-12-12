@@ -13,7 +13,7 @@
 <body class="d-flex flex-column h-100">
 
 <!-- Header -->
-<?php
+    <?php
         session_start();
     ?>
 
@@ -35,7 +35,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link px-3 mx-2" href="index.html">Beranda</a>
+                                <a class="nav-link px-3 mx-2" href="index.php">Beranda</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle px-3 mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kegiatan</a>
@@ -64,7 +64,7 @@
         <header>
             <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent py-3" aria-label="header">
                 <div class="container">
-                    <a class="navbar-brand" href="../../index.html">
+                    <a class="navbar-brand" href="index.php">
                         <img src="assets\images\logo\Logo UNJ Event.png" width="190" class="d-inline-block"
                             alt="logo">
                     </a>
@@ -76,18 +76,21 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link px-3 mx-2" href="../../index.html">Beranda</a>
+                                <a class="nav-link px-3 mx-2" href="index.php">Beranda</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle px-3 mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acara</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="../lomba/lomba.html">Lomba</a></li>
-                                    <li><a class="dropdown-item" href="../webinar/webinar.html">Webinar</a></li>
-                                    <li><a class="dropdown-item" href="../workshop/workshop.html">Workshop</a></li>
+                                    <li><a class="dropdown-item" href="kategori/lomba/lomba.html">Lomba</a></li>
+                                    <li><a class="dropdown-item" href="kategori/webinar/webinar.html">Webinar</a></li>
+                                    <li><a class="dropdown-item" href="kategori/workshop/workshop.html">Workshop</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-3 mx-2" href="../../registrasi-acara.html">Daftarkan Acara</a>
+                                <a class="nav-link px-3 mx-2" href="registrasi-acara.html">Daftarkan Acara</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="about-us.html">Tentang Kami</a>
                             </li>
                         </ul>
                         <a class="btn btn-sm btn-outline-primary px-3 py-2" href="login.php" role="button">

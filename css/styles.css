@@ -45,15 +45,6 @@ body {
     color: #00923f;
 }
 
-.card {
-    border-radius: 0.5rem;
-}
-
-.card-img-top {
-    border-top-left-radius: calc(0.5rem - 1px);
-    border-top-right-radius: calc(0.5rem - 1px);
-}
-
 .active {
     color: #171B3D !important;
 }
@@ -123,15 +114,6 @@ main>.container {
 .carousel-item img {
     height: 320px;
 }
-
-.card:hover {
-    box-shadow: 0 1rem 3rem rgba(23, 76, 29, 0.503);
-}
-
-.card img {
-    height: 200px;
-}
-
 
 .border {
     border: 1px gray;
@@ -210,12 +192,6 @@ main>.container {
     height: 22rem;
 }
 
-.card-img-top{
-    width: 100%;
-    height: 15vw;
-    object-fit: contain;
-}
-
 .card-title {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -232,10 +208,32 @@ main>.container {
     text-overflow: ellipsis;
 }
 
+.card:hover {
+    box-shadow: 0 1rem 3rem rgba(23, 76, 29, 0.503);
+}
+
+.card img {
+    height: 200px;
+}
+
+.card {
+    border-radius: 0.5rem;
+}
+
+.card-img-top {
+    border-top-left-radius: calc(0.5rem - 1px);
+    border-top-right-radius: calc(0.5rem - 1px);
+    width: 100%;
+    height: 15vw;
+    object-fit: contain;
+}
+
 .row .col-md-4>img {
     height: 210px;
 }
 
+
+/* form */
 .form-check-input:focus {
     border-color: #05d016;
     outline: 0;
